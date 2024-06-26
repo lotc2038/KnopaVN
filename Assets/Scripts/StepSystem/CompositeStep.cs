@@ -1,15 +1,15 @@
 using System.Collections.Generic;
 
-public class CompositeStep : IStep
+public class CompositeStep : Step
 {
-    private List<IStep> steps;
+    private List<Step> steps;
 
-    public CompositeStep(List<IStep> steps)
+    public CompositeStep(List<Step> steps)
     {
         this.steps = steps;
     }
 
-    public void Execute()
+    public override void Execute()
     {
         foreach (var step in steps)
         {

@@ -4,7 +4,6 @@ using UnityEngine;
 [System.Serializable]
 public class DialogueChoice
 {
-    public int choiceId;
-    public string choiceText;
+    [TextArea(3, 10)] public string choiceText;
     public int nextNodeId;
 }

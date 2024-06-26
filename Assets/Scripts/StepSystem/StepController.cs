@@ -7,10 +7,10 @@ using UnityEngine;
 
 public class StepController : MonoBehaviour
 {
-    public List<IStep> steps = new List<IStep>();
+    public List<Step> steps = new List<Step>();
     public int currentStepIndex = 0;
 
-    public void AddStep(IStep step)
+    public void AddStep(Step step)
     {
         steps.Add(step);
     }
